@@ -1,0 +1,28 @@
+generator clients {
+  provider = "prisma-client-js" 
+  url      = env("DATABASE_URL")
+}
+
+datasource dbs {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Artist {
+  id         Int          @id @default(autoincrement())
+  name       String      @unique
+  instrument Instrument[] 
+  style     Style[]
+}
+
+model Style {
+  id             Int      @id @default(autoincrement())
+  name           String   @unique
+  artists       Artist[]
+}
+
+model Instrument {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  artist   Artist[]
+}

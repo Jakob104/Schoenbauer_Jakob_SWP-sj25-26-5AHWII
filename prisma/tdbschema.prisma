@@ -1,0 +1,28 @@
+// Ensure only one datasource block exists in your schema file.
+// Remove this block if another identical 'datasource db' block exists elsewhere in your project.
+
+ 
+// Removed duplicate 'category' model
+
+model Question {
+  id         Int       @id @default(autoincrement())
+  question   String
+  type       String
+  difficulty String
+  category   Category  @relation(fields: [categoryId], references: [id])
+  categoryId Int
+  answers    Answer[]
+}
+model Category {
+  id        Int        @id @default(autoincrement())
+  name      String     @unique
+  questions Question[]
+}
+
+model Answer {
+  id         Int      @id @default(autoincrement())
+  text       String
+  isCorrect  Boolean
+  question   Question @relation(fields: [questionId], references: [id])
+  questionId Int
+}
