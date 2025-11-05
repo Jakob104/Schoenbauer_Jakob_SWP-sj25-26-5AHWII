@@ -201,6 +201,12 @@
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1"
-    ]
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:@prisma/client@^6.16.2",
+        "npm:prisma@^6.16.2"
+      ]
+    }
   }
 }
