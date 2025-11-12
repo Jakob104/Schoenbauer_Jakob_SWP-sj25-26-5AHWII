@@ -22,7 +22,7 @@ const config: runtime.GetPrismaClientConfig = {
       "value": "prisma-client"
     },
     "output": {
-      "value": "C:\\Users\\jakob\\Documents\\.HTL Spengergasse\\5AHWII\\SWP - Graf\\Stand 05.11\\Schoenbauer_Jakob_SWP-sj25-26-5AHWII\\2025-10_airline_datenmodell\\prisma\\client",
+      "value": "C:\\Users\\jakob\\Documents\\.HTL Spengergasse\\5AHWII\\SWP - Graf\\Stand 05.11\\Schoenbauer_Jakob_SWP-sj25-26-5AHWII\\2025-11_airline_datenmodell\\prisma\\client",
       "fromEnvVar": null
     },
     "config": {
@@ -37,7 +37,7 @@ const config: runtime.GetPrismaClientConfig = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\jakob\\Documents\\.HTL Spengergasse\\5AHWII\\SWP - Graf\\Stand 05.11\\Schoenbauer_Jakob_SWP-sj25-26-5AHWII\\2025-10_airline_datenmodell\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\jakob\\Documents\\.HTL Spengergasse\\5AHWII\\SWP - Graf\\Stand 05.11\\Schoenbauer_Jakob_SWP-sj25-26-5AHWII\\2025-11_airline_datenmodell\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativePath": "..",
@@ -47,7 +47,6 @@ const config: runtime.GetPrismaClientConfig = {
     "db"
   ],
   "activeProvider": "sqlite",
-  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
